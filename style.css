@@ -53,3 +53,7 @@
   position: relative;
   z-index: 1;
 }
+.intro {
+    --scene-image: url("./image/pattern-bugis-hd.png");
+    min-height: 80vh;
+}
