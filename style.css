@@ -38,7 +38,7 @@
   );
 }
 /* Pattern Bugis untuk halaman pembuka undangan */
-.intro-scene {
+.intro {
   background-image:
     linear-gradient(
       rgba(15, 7, 9, 0.58),
