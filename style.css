@@ -14,14 +14,26 @@
     font-size: 8,5vw;
   }
 }
+/* Background sampul Pinisi */
 .hero {
-  background-image:
-    linear-gradient(
-      rgba(10, 8, 8, 0.12),
-      rgba(10, 8, 8, 0.20)
-    ),
-    url("./images/sampul.jpeg");
+  background-image: none !important;
+  background-color: #151519;
+}
+
+/* Gambar sampul baru */
+.hero::before {
+  background-image: url("./image/sampul.jpeg") !important;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+/* Lapisan gelap agar teks terbaca */
+.hero::after {
+  background: linear-gradient(
+    180deg,
+    rgba(4, 5, 8, 0.12),
+    rgba(4, 5, 8, 0.25) 45%,
+    rgba(4, 5, 8, 0.55) 100%
+  );
 }
