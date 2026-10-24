@@ -37,3 +37,15 @@
     rgba(4, 5, 8, 0.55) 100%
   );
 }
+/* Pattern Bugis untuk halaman pembuka undangan */
+.intro-s {
+  background-image:
+    linear-gradient(
+      rgba(15, 7, 9, 0.58),
+      rgba(15, 7, 9, 0.72)
+    ),
+    url("./image/pattern-bugis-hd.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
