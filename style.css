@@ -56,7 +56,7 @@ position: absolute;
 inset: 0;
 z-index: -2;
 background-image: url("./image/pattern-bugis-hd.png") !important;
-background-size: 80px 80px !important;
+background-size: 480px 480px !important;
 background-position: center center !important;
 background-repeat: repeat !important;
 opacity: 0.85;
