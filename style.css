@@ -51,7 +51,7 @@ background-image: none !important;
 /* Motif Bugis berulang di belakang teks */
 main section#undangan.intro.scene::before {
 background-image: url("./image/pattern-bugis-hd.png") !important;
-background-size: 180px 180px !important;
+background-size: 240px 240px !important;
 background-position: center center !important;
 background-repeat: repeat !important;
 opacity: 0.65;
