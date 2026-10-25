@@ -71,13 +71,40 @@ main section#undangan.intro.scene > .panel {
 position: relative;
 z-index: 1;
 }
-/* TES SEMENTARA — HAPUS SETELAH BERHASIL */
+/* BACKGROUND MOTIF BUGIS — SECTION UNDANGAN */
 main section#undangan.intro.scene {
-background: #ff0000 !important;
+background-color: #211316 !important;
 }
 
-main section#undangan.intro.scene::before,
+/* Motif kecil berulang */
+main section#undangan.intro.scene::before {
+content: "";
+position: absolute;
+inset: 0;
+z-index: -2;
+background-image: url("./image/pattern-bugis-hd.png") !important;
+background-size: 180px 180px !important;
+background-position: center center !important;
+background-repeat: repeat !important;
+opacity: 0.85;
+transform: none !important;
+}
+
+/* Lapisan gelap untuk kesan mewah */
 main section#undangan.intro.scene::after {
-background-image: none !important;
-background: none !important;
+content: "";
+position: absolute;
+inset: 0;
+z-index: -1;
+background: linear-gradient(
+135deg,
+rgba(20, 10, 12, 0.45),
+rgba(20, 10, 12, 0.65)
+) !important;
+}
+
+/* Panel teks tetap di atas background */
+main section#undangan.intro.scene > .panel {
+position: relative;
+z-index: 1;
 }
