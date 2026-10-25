@@ -81,3 +81,73 @@ main section#undangan.intro.scene > .panel {
 position: relative;
 z-index: 1;
 }
+
+/* =========================================
+OPTIMASI SAMPUL UNTUK HP / ANDROID
+========================================= */
+@media (max-width: 720px) {
+
+/* Posisi gambar: tampilkan area kapal */
+.hero::before {
+background-size: auto 100% !important;
+background-position: 35% center !important;
+}
+
+/* Kurangi ruang kosong dan pusatkan konten */
+.hero {
+min-height: 100svh !important;
+padding: 100px 18px 45px !important;
+}
+
+.hero-content {
+width: 100%;
+max-width: 100%;
+padding-top: 0 !important;
+transform: translateY(-12px);
+}
+
+/* Tulisan undangan */
+.hero-content .eyebrow {
+font-size: 12px;
+letter-spacing: 0.18em;
+}
+
+/* Nama pengantin */
+.hero h1 {
+font-size: clamp(46px, 10vw, 64px) !important;
+line-height: 1.05 !important;
+white-space: nowrap;
+gap: 0.12em;
+margin: 24px 0 !important;
+}
+
+/* Tanggal */
+.hero-date {
+font-size: 15px !important;
+letter-spacing: 0.12em !important;
+}
+
+/* Lokasi */
+.hero-place {
+font-size: 14px !important;
+letter-spacing: 0.08em !important;
+margin-top: 12px;
+}
+
+/* Tombol buka undangan */
+.hero-content .gold-button {
+font-size: 12px;
+padding: 16px 24px;
+margin-top: 30px;
+}
+
+/* Petunjuk scroll */
+.scroll-hint {
+font-size: 10px;
+margin-top: 42px !important;
+}
+
+.scroll-hint span {
+font-size: 26px;
+}
+}
