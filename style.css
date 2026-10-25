@@ -71,3 +71,13 @@ main section#undangan.intro.scene > .panel {
 position: relative;
 z-index: 1;
 }
+/* TES SEMENTARA — HAPUS SETELAH BERHASIL */
+main section#undangan.intro.scene {
+background: #ff0000 !important;
+}
+
+main section#undangan.intro.scene::before,
+main section#undangan.intro.scene::after {
+background-image: none !important;
+background: none !important;
+}
