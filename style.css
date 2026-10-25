@@ -38,33 +38,6 @@
   );
 }
 
- /* ========================================
-BACKGROUND MOTIF BUGIS
-Section: Dengan penuh rasa syukur
-======================================== */
-
-main section#undangan.intro.scene {
-background-color: #211316 !important;
-background-image: none !important;
-}
-
-/* Motif Bugis berulang di belakang teks */
-main section#undangan.intro.scene::before {
-background-image: url("./image/pattern-bugis-hd.png") !important;
-background-size: 480px 480px !important;
-background-position: center center !important;
-background-repeat: repeat !important;
-opacity: 0.65;
-transform: none;
-}
-
-/* Lapisan gelap supaya motif tidak mengganggu teks */
-main section#undangan.intro.scene::after {
-background: linear-gradient(
-rgba(20, 10, 12, 0.48),
-rgba(20, 10, 12, 0.68)
-) !important;
-}
 
 /* Panel teks undangan */
 main section#undangan.intro.scene > .panel {
